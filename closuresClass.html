@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function parent() {
+            var message = "Hello BADAR";
+
+            function child() {
+
+                alert(message)
+            }
+
+            child()
+        }
+        parent();
+
+        function p() {
+            var messages = "Hello KARACHI";
+
+            function c() {
+                alert(messages)
+            }
+
+            return c;
+        }
+        var childFn = p();
+        childFn();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
